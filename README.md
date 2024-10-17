@@ -238,3 +238,83 @@ Os Serviços de Aplicativos do Azure permitem criar, implantar e escalar aplicat
 Suporte a várias linguagens: .NET, Java, Node.js, Python, entre outras.
 Integração contínua: Ferramentas de DevOps para integração e entrega contínuas.
 Escalabilidade e segurança: Escale seus aplicativos facilmente e proteja-os com recursos de segurança integrados.
+
+
+Descrever os serviços do armazenamento do Azure
+
+Opções de Redundância e Serviços de Armazenamento
+•	Redundância: O Azure oferece várias opções de redundância para garantir a alta disponibilidade e durabilidade dos dados. As opções incluem:
+o	Locally Redundant Storage (LRS): Mantém três cópias dos dados dentro de uma única região.
+o	Zone-Redundant Storage (ZRS): Armazena dados em diferentes zonas de disponibilidade dentro da mesma região.
+
+Opções de Gerenciamento de Arquivo
+
+•	Azure Files: Serviço de compartilhamento de arquivos totalmente gerenciado, acessível via SMB (Server Message Block) e NFS (Network File System).
+O armazenamento dos Arquivos do Azure oferece compartilhamento de arquivo totalmente gerenciado na nuvem e acessível por meio do protocolo SMB ou NFS (Network File System) padrão do setor. Os compartilhamentos de Arquivos do Azure podem ser montados de maneira simultânea por implantações locais ou na nuvem. É possível acessar os compartilhamentos de Arquivos do Azure do protocolo SMB em clientes Windows, Linux e macOS. É possível acessar os compartilhamentos de Arquivos do Azure do protocolo NFS em clientes Linux e macOS. Além disso, os compartilhamentos de Arquivos do Azure do protocolo SMB podem ser armazenados em cache nos Windows Servers com a Sincronização de Arquivos do Azure para acesso rápido perto de onde os dados estão sendo usados.
+•	Azure Blob Storage: Armazenamento de objetos otimizado para grandes quantidades de dados não estruturados, como documentos, imagens e vídeos.
+O armazenamento de Blobs do Azure é uma solução de armazenamento de objetos para a nuvem. Ele pode armazenar grandes quantidades de dados, como texto ou dados binários. O armazenamento de Blobs do Azure não é estruturado, o que significa que não há nenhuma restrição quanto aos tipos de dados que ele pode armazenar. O armazenamento de Blobs pode gerenciar milhares de carregamentos simultâneos, grandes quantidades de dados de vídeo, arquivos de log em constante crescimento e pode ser acessado de qualquer lugar com uma conexão com a Internet.
+Os blobs não estão limitados a formatos de arquivo comuns. Um blob pode conter gigabytes de dados binários transmitidos de um instrumento científico, uma mensagem criptografada para outro aplicativo ou dados em um formato personalizado para um aplicativo que você está desenvolvendo. Uma vantagem do Armazenamento de Blobs em relação ao Armazenamento em Disco é que ele não exige que os desenvolvedores pensem em discos e nem os gerenciem. Os dados são carregados como blobs e o Azure cuida das necessidades de armazenamento físico.
+O armazenamento de Blobs é ideal para:
+•	Fornecimento de imagens ou de documentos diretamente a um navegador.
+•	Armazenamento de arquivos para acesso distribuído.
+•	Transmissão por streaming de áudio e vídeo.
+•	Armazenamento de dados de backup e restauração, recuperação de desastres e arquivamento.
+•	Armazenamento de dados para análise por um serviço local ou hospedado no Azure.
+
+•	Azure Data Box: Solução para transferir grandes quantidades de dados para o Azure usando dispositivos físicos.
+
+Filas do Azure
+O Armazenamento de Filas do Azure é um serviço usado para armazenar grandes quantidades de mensagens. Após o armazenamento, você pode acessar as mensagens em qualquer lugar do mundo por meio de chamadas autenticadas usando HTTP ou HTTPS. Uma fila pode conter a quantidade de mensagens que couber na sua conta de armazenamento (possivelmente milhões). Cada mensagem individual pode ter até 64 KB de tamanho. As filas são normalmente usadas para criar uma lista de pendências de trabalho para processamento assíncrono.
+O Armazenamento de Filas pode ser combinado com funções de computação, como o Azure Functions, para executar uma ação quando uma mensagem é recebida. Por exemplo, você quer que uma ação seja executada depois que um cliente carregar um formulário no site. Você pode fazer com que o botão Enviar no site dispare uma mensagem para o Armazenamento de Filas. Depois, você pode usar o Azure Functions para disparar uma ação quando a mensagem for recebida.
+
+Tabelas do Azure
+O Armazenamento de Tabelas do Microsoft Azure armazena grandes quantidades de dados estruturados. As tabelas do Azure são um repositório de dados NoSQL que aceita chamadas autenticadas de dentro e de fora da nuvem do Azure. Isso permite que você use tabelas do Azure para criar sua solução híbrida ou de várias nuvens e ter seus dados sempre disponíveis. As tabelas do Azure são ideais para armazenar dados estruturados não relacionais.
+
+Pontos de Extremidades Públicos e Privados
+
+•	Pontos de Extremidade Públicos: Permitem que os serviços de armazenamento do Azure sejam acessados pela internet. São usados para cenários onde os dados precisam ser acessíveis externamente.
+•	Pontos de Extremidade Privados: Permitem que os serviços de armazenamento sejam acessados de forma segura dentro da rede virtual do Azure, sem expor os dados à internet pública.
+Camadas de armazenamento
+
+Os dados armazenados na nuvem aumentam em ritmo exponencial. Para gerenciar os custos de suas necessidades de armazenamento em expansão, pode ser útil organizar seus dados com base na frequência com que eles serão acessados e por quanto tempo eles serão retidos. O Armazenamento do Azure oferece diferentes camadas de acesso para que você possa armazenar seus dados de blob da maneira mais econômica com base em como eles estão sendo usados. As camadas de acesso do Armazenamento do Azure incluem:
+•	Camada quente – uma camada online otimizada para armazenar dados acessados ou modificados com frequência. A camada quente tem os custos de armazenamento mais altos, mas os custos de acesso mais baixos.
+•	Camada fria – uma camada online otimizada para armazenar dados acessados ou modificados com pouca frequência. Os dados na camada de acesso esporádico devem ser armazenados por um mínimo de 30 dias. A camada fria tem custos de armazenamento mais baixos e custos de acesso mais altos em comparação com a camada quente.
+•	Camada de acesso frio: uma camada online otimizada para armazenar dados acessados ou modificados com pouca frequência, mas que ainda exigem uma recuperação rápida. Os dados na camada acesso frio devem ser armazenados por um mínimo de 90 dias. A camada de acesso frio tem custos de armazenamento mais baixos e custos de acesso mais altos em comparação com a camada de acesso esporádico.
+•	Camada de arquivos: uma camada offline otimizada para armazenar dados acessados raramente e com requisitos de latência flexíveis, na ordem de horas. Os dados na camada de arquivos devem ser armazenados por um mínimo de 180 dias.
+
+
+
+
+Migração para o Azure
+
+•	Azure Site Recovery: Usado para replicar, proteger e recuperar máquinas virtuais e servidores físicos para o Azure.
+
+Migrações para Azure
+•	Azure Migrate: É uma ferramenta centralizada que ajuda a avaliar e migrar cargas de trabalho para o Azure. Oferece suporte para migração de servidores, bancos de dados, aplicativos e dados.
+•	Suas principais funcionalidades incluem:
+o	Descoberta e Avaliação: Permite descobrir e avaliar servidores, bancos de dados, aplicativos e dados no ambiente local.
+o	Migração de Servidores: Suporta a migração de servidores físicos, VMware, Hyper-V e outros provedores de nuvem para o Azure.
+o	Migração de Bancos de Dados: Facilita a migração de bancos de dados SQL Server, MySQL, PostgreSQL e outros para o Azure SQL Database ou Azure Database for MySQL/PostgreSQL.
+o	Migração de Aplicativos Web: Ajuda a migrar aplicativos web para o Azure App Service.
+o	Migração de Áreas de Trabalho Virtuais: Suporta a migração de desktops virtuais para o Azure Virtual Desktop.
+Azure Data Box
+•	Azure Data Box: É uma solução para transferir grandes quantidades de dados para o Azure usando dispositivos físicos. Existem diferentes variantes do Data Box:
+o	Data Box: Um dispositivo robusto que pode transferir até 80 TB de dados.
+o	Data Box Disk: Discos SSD que podem transferir até 8 TB de dados por disco, ideal para transferências menores.
+o	Data Box Heavy: Um dispositivo maior que pode transferir até 1 PB de dados, adequado para grandes volumes de dados.
+
+O AzCopy é uma ferramenta de linha de comando usada para transferir dados de e para o Armazenamento do Microsoft Azure. Com o AzCopy, você pode copiar ou mover blobs, arquivos e até mesmo tabelas entre contas de armazenamento no Azure. Aqui estão algumas funcionalidades principais:
+Transferência de Dados: Permite copiar dados de, para ou entre contas de armazenamento do Azure.
+Autorização: Suporta várias formas de autenticação, incluindo chaves de conta, SAS (Shared Access Signatures) e identidades gerenciadas.
+Desempenho: Otimizado para transferências rápidas e eficientes, suportando operações em massa e paralelas.
+Flexibilidade: Pode ser usado em diferentes sistemas operacionais, incluindo Windows, Linux e macOS.
+Sincronização em uma direção.
+
+Gerenciador de Armazenamento do Azure
+Interface gráfica do usuário (de modo semelhante ao Windows Explorer).
+Compatível com Windows, MacOS e Linux.
+Sincronização de Arquivos do Azure
+Sincroniza os arquivos do Azure e locais de forma bidirecional
+A camada de nuvem mantém os arquivos acessados com frequência no local, enquanto libera espaço.
+
+
