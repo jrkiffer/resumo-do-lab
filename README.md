@@ -2,7 +2,16 @@
 Este repositorio é um resumo dos meus estudos sobre Azure na DIO
 
 
+
+
+
+
 Descrever os conceitos da nuvem (25 a 30%)
+
+
+
+
+
 
 Definir a computação em Nuvem
 
@@ -58,9 +67,7 @@ Seu modelo de serviço determinará a responsabilidade por coisas como:
 •	Aplicativos
 •	Identidade e infraestrutura
 
-Tipos de Cloud
-
- 
+Tipos de Cloud:
 
 IAAS (Infrastructure as as servisse): Infraestrutura como serviço.
 “Você como cliente pode alugar uma estrutura de TI de um provedor Cloud.
@@ -129,7 +136,17 @@ O gerenciamento na nuvem diz respeito à maneira de gerenciar seu ambiente de nu
 •	Usando o PowerShell.
 
 
+
+
+
+
 Descrever a arquitetura e os serviços do Azure (35 a 40%)
+
+
+
+
+
+
 
 Arquitetura e Serviços do Azure
 
@@ -163,7 +180,25 @@ Preservar a residência de dados com uma oferta de conformidade abrangente.
 7. Hierarquia de Grupos de Recursos, Assinaturas e Grupos de Gerenciamento
 •	Hierarquia: A estrutura hierárquica começa com grupos de gerenciamento no topo, seguidos por assinaturas e, finalmente, grupos de recursos. Isso ajuda a organizar e gerenciar recursos de forma eficiente.
 
+
+
+
+
+
+
+
+
 Descrever os serviços de computação e rede do Azure
+
+
+
+
+
+
+
+
+
+
 
 Descrever máquinas virtuais do Azure
 
@@ -240,7 +275,18 @@ Integração contínua: Ferramentas de DevOps para integração e entrega contí
 Escalabilidade e segurança: Escale seus aplicativos facilmente e proteja-os com recursos de segurança integrados.
 
 
+
+
+
+
+
 Descrever os serviços do armazenamento do Azure
+
+
+
+
+
+
 
 Opções de Redundância e Serviços de Armazenamento
 •	Redundância: O Azure oferece várias opções de redundância para garantir a alta disponibilidade e durabilidade dos dados. As opções incluem:
@@ -274,6 +320,7 @@ Pontos de Extremidades Públicos e Privados
 
 •	Pontos de Extremidade Públicos: Permitem que os serviços de armazenamento do Azure sejam acessados pela internet. São usados para cenários onde os dados precisam ser acessíveis externamente.
 •	Pontos de Extremidade Privados: Permitem que os serviços de armazenamento sejam acessados de forma segura dentro da rede virtual do Azure, sem expor os dados à internet pública.
+
 Camadas de armazenamento
 
 Os dados armazenados na nuvem aumentam em ritmo exponencial. Para gerenciar os custos de suas necessidades de armazenamento em expansão, pode ser útil organizar seus dados com base na frequência com que eles serão acessados e por quanto tempo eles serão retidos. O Armazenamento do Azure oferece diferentes camadas de acesso para que você possa armazenar seus dados de blob da maneira mais econômica com base em como eles estão sendo usados. As camadas de acesso do Armazenamento do Azure incluem:
@@ -281,8 +328,6 @@ Os dados armazenados na nuvem aumentam em ritmo exponencial. Para gerenciar os c
 •	Camada fria – uma camada online otimizada para armazenar dados acessados ou modificados com pouca frequência. Os dados na camada de acesso esporádico devem ser armazenados por um mínimo de 30 dias. A camada fria tem custos de armazenamento mais baixos e custos de acesso mais altos em comparação com a camada quente.
 •	Camada de acesso frio: uma camada online otimizada para armazenar dados acessados ou modificados com pouca frequência, mas que ainda exigem uma recuperação rápida. Os dados na camada acesso frio devem ser armazenados por um mínimo de 90 dias. A camada de acesso frio tem custos de armazenamento mais baixos e custos de acesso mais altos em comparação com a camada de acesso esporádico.
 •	Camada de arquivos: uma camada offline otimizada para armazenar dados acessados raramente e com requisitos de latência flexíveis, na ordem de horas. Os dados na camada de arquivos devem ser armazenados por um mínimo de 180 dias.
-
-
 
 
 Migração para o Azure
@@ -316,5 +361,55 @@ Compatível com Windows, MacOS e Linux.
 Sincronização de Arquivos do Azure
 Sincroniza os arquivos do Azure e locais de forma bidirecional
 A camada de nuvem mantém os arquivos acessados com frequência no local, enquanto libera espaço.
+
+
+
+
+
+Identidade, Acesso e Segurança
+
+
+
+
+
+
+
+Microsoft Entra ID: Anteriormente conhecido como Azure Active Directory, é um serviço de gerenciamento de identidades e acessos baseado em nuvem. Ele oferece autenticação e autorização para serviços como Microsoft 365, Dynamics 365 e Azure. Funcionalidades incluem logon único (SSO), autenticação multifator (MFA) e acesso condicional.
+
+Microsoft Entra Domain Services: Fornece serviços de domínio gerenciados, como ingresso no domínio do Windows, políticas de grupo e LDAP, sem a necessidade de implantar, gerenciar ou aplicar patches a controladores de domínio.
+
+Métodos de Autenticação no Azure
+
+SSO (Logon Único): Permite que os usuários acessem vários aplicativos com uma única credencial de login, simplificando a experiência do usuário e aumentando a segurança.
+
+MFA (Autenticação Multifator): Adiciona uma camada extra de segurança, exigindo que os usuários forneçam dois ou mais métodos de verificação, como senha e um código enviado para o celular.
+
+Autenticação Sem Senha: Utiliza métodos como biometria (impressão digital, reconhecimento facial) ou chaves de segurança FIDO2 para autenticar usuários sem a necessidade de uma senha.
+
+Identidades Externas e Acesso de Convidado no Azure
+
+Identidades Externas: Permitem que usuários de fora da organização acessem recursos de forma segura. Isso inclui parceiros, clientes e consumidores que podem usar suas próprias identidades, como contas de redes sociais ou corporativas.
+
+Acesso de Convidado: Permite que convidados externos colaborem com a organização, oferecendo acesso controlado a recursos específicos. Isso é gerenciado através do Microsoft Entra ID.
+
+Acesso Condicional do Entra
+
+Acesso Condicional: É uma ferramenta que aplica políticas de acesso baseadas em condições específicas, como localização, dispositivo ou risco de login. Ele ajuda a garantir que apenas usuários autorizados e em conformidade possam acessar recursos sensíveis.
+
+Controle de Acesso Baseado em Função (RBAC)
+
+RBAC: Permite gerenciar permissões de acesso refinadas para recursos do Azure, atribuindo funções específicas a usuários, grupos ou aplicativos. Isso simplifica o gerenciamento de permissões e aumenta a segurança.
+
+Conceito de Confiança Zero
+
+Confiança Zero: Modelo de segurança que assume que nenhuma entidade, seja dentro ou fora da rede, é confiável por padrão. Ele exige verificação contínua de identidade e contexto antes de conceder acesso a recursos.
+
+Finalidade do Modelo de Defesa em Profundidade
+
+Defesa em Profundidade: Estratégia de segurança que utiliza várias camadas de defesa para proteger dados e recursos. Cada camada serve como uma barreira adicional contra ataques, aumentando a resiliência geral do sistema.
+
+Finalidade do Microsoft Defender para Nuvem
+
+Microsoft Defender para Nuvem: Oferece visibilidade e controle sobre a segurança dos recursos no Azure. Ele ajuda a identificar e mitigar ameaças, além de fornecer recomendações de segurança para melhorar a postura de segurança da organização.
 
 
