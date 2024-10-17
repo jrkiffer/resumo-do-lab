@@ -413,3 +413,69 @@ Finalidade do Microsoft Defender para Nuvem
 Microsoft Defender para Nuvem: Oferece visibilidade e controle sobre a segurança dos recursos no Azure. Ele ajuda a identificar e mitigar ameaças, além de fornecer recomendações de segurança para melhorar a postura de segurança da organização.
 
 
+
+
+
+
+
+Gerenciamento de Custos
+
+
+
+
+
+
+
+
+
+Fatores que Podem Afetar os Custos no Azure
+
+Os custos no Azure podem ser influenciados por diversos fatores, incluindo:
+
+•	Tipo de Serviço: Diferentes serviços têm diferentes estruturas de preços. Por exemplo, o custo de uma máquina virtual pode variar dependendo do tipo de instância e da região.
+•	Uso de Recursos: A quantidade de recursos consumidos, como CPU, memória e armazenamento, impacta diretamente os custos.
+•	Localização Geográfica: Os preços podem variar entre diferentes regiões do Azure.
+•	Nível de Serviço: Serviços com maior disponibilidade e suporte podem ter custos mais elevados.
+•	Descontos e Ofertas: Programas como Instâncias Reservadas e o Benefício Híbrido do Azure podem reduzir os custos.
+
+Azure Marketplace
+
+O Azure Marketplace permite que os clientes encontrem, experimentem, comprem e provisionem aplicativos e serviços de centenas de provedores de serviços líderes, que são todos certificados para execução no Azure.
+O Azure Marketplace é uma plataforma online onde você pode encontrar, experimentar, comprar e implantar milhares de aplicativos e serviços que são otimizados para rodar no Microsoft Azure. Ele oferece uma ampla variedade de soluções, desde software de código aberto até aplicativos comerciais, que podem ajudar a acelerar o desenvolvimento, economizar tempo e dinheiro, e inovar mais rapidamente com soluções pré-construídas.
+
+Principais Funcionalidades do Azure Marketplace:
+
+•	Variedade de Aplicativos: Inclui uma vasta gama de aplicativos e serviços, como imagens de máquinas virtuais, soluções de segurança, redes, armazenamento, bancos de dados e muito mais.
+•	Consultoria e Serviços: Além de software, o Marketplace também oferece serviços de consultoria para ajudar na adoção e implementação de soluções no Azure.
+•	Certificação e Otimização: Todos os aplicativos e serviços disponíveis são certificados e otimizados para execução no Azure, garantindo desempenho e segurança.
+•	Facilidade de Implantação: Permite a implantação rápida e confiável de soluções de ponta a ponta diretamente no ambiente do Azure.
+
+Benefícios do Azure Marketplace:
+
+•	Aceleração do Desenvolvimento: Com acesso a soluções pré-construídas, você pode acelerar o desenvolvimento de seus projetos.
+•	Economia de Tempo e Dinheiro: Ao utilizar soluções prontas, você reduz o tempo e os custos associados ao desenvolvimento e manutenção de software.
+•	Inovação: A plataforma facilita a inovação, permitindo que você experimente novas tecnologias e soluções de forma rápida e segura.
+
+
+Comparação entre a Calculadora de Preços e a Calculadora de Custo Total de Propriedade (TCO)
+
+•	Calculadora de Preços: Ferramenta que permite estimar os custos mensais ou por hora dos serviços do Azure com base no uso previsto. É útil para planejar e orçar novos projetos no Azure.
+
+•	Calculadora de Custo Total de Propriedade (TCO): Ferramenta que ajuda a calcular as economias potenciais ao migrar cargas de trabalho para o Azure. Considera custos de infraestrutura, energia, manutenção e outros fatores para fornecer uma visão abrangente do custo total de propriedade.
+
+Ferramenta de Gerenciamento de Custos do Azure
+
+A Ferramenta de Gerenciamento de Custos do Azure permite que as organizações monitorem, analisem e otimizem seus gastos na nuvem. Com ela, é possível:
+
+•	Analisar Custos: Visualizar e analisar os custos detalhados por assinatura, grupo de recursos ou tipo de recurso.
+•	Definir Orçamentos: Estabelecer orçamentos e receber alertas quando os gastos se aproximarem ou excederem os limites definidos.
+•	Alocar Custos: Atribuir custos a diferentes departamentos ou projetos para melhor controle financeiro.
+
+Finalidade das Marcas (TAGS)
+
+As marcas (tags) no Azure são usadas para organizar e gerenciar recursos de forma eficiente. Elas permitem:
+
+•	Classificação: Categorizar recursos para facilitar a busca e a organização.
+•	Gerenciamento de Custos: Atribuir custos a projetos específicos, departamentos ou equipes.
+•	Automação: Utilizar tags em scripts e automações para gerenciar recursos de forma dinâmica.
+
