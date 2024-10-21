@@ -479,3 +479,23 @@ As marcas (tags) no Azure são usadas para organizar e gerenciar recursos de for
 •	Gerenciamento de Custos: Atribuir custos a projetos específicos, departamentos ou equipes.
 •	Automação: Utilizar tags em scripts e automações para gerenciar recursos de forma dinâmica.
 
+
+
+Descrever os recursos e ferramentas de governança e conformidade no Azure
+
+
+Azure Blueprints
+
+Azure Blueprints permite que você defina um conjunto de recursos, políticas e outros artefatos que podem ser reutilizados para criar e gerenciar ambientes consistentes e conformes. Ele ajuda a garantir que as implantações estejam alinhadas com os padrões organizacionais e requisitos de conformidade. Além disso, os Blueprints podem incluir bloqueios de recursos para evitar alterações indesejadas.
+
+Azure Policy
+
+Azure Policy é uma ferramenta que permite criar, atribuir e gerenciar políticas que aplicam regras e efeitos sobre os recursos do Azure. O objetivo é garantir que os recursos estejam em conformidade com os padrões corporativos e regulatórios. Por exemplo, você pode usar o Azure Policy para garantir que apenas tipos específicos de máquinas virtuais sejam criados ou que todos os recursos tenham tags apropriadas.
+
+Bloqueios de Recursos
+
+Os bloqueios de recursos no Azure são usados para impedir que recursos críticos sejam excluídos ou modificados acidentalmente. Existem dois tipos principais de bloqueios: “Não Excluir” e “Somente Leitura”. O bloqueio “Não Excluir” impede a exclusão de um recurso, enquanto o bloqueio “Somente Leitura” impede qualquer modificação.
+
+Portal de Confiança do Serviço
+
+O Portal de Confiança do Serviço (Service Trust Portal) fornece informações detalhadas sobre a conformidade do Azure com vários padrões regulatórios e de segurança. Ele oferece acesso a relatórios de auditoria, guias de conformidade e outros documentos que ajudam as organizações a entender como o Azure atende aos requisitos de conformidade e segurança.
