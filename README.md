@@ -499,3 +499,48 @@ Os bloqueios de recursos no Azure são usados para impedir que recursos crítico
 Portal de Confiança do Serviço
 
 O Portal de Confiança do Serviço (Service Trust Portal) fornece informações detalhadas sobre a conformidade do Azure com vários padrões regulatórios e de segurança. Ele oferece acesso a relatórios de auditoria, guias de conformidade e outros documentos que ajudam as organizações a entender como o Azure atende aos requisitos de conformidade e segurança.
+
+
+
+Descrever os recursos e ferramentas para gerenciar e implantar recursos do Azure
+
+
+
+Portal do Azure
+
+O Portal do Azure é uma interface web unificada que permite gerenciar e visualizar todos os seus recursos do Azure. Ele oferece uma experiência gráfica intuitiva para criar, configurar e monitorar serviços e recursos. Com o Portal do Azure, você pode realizar tarefas como a criação de máquinas virtuais, configuração de redes virtuais e monitoramento de desempenho de aplicativos, tudo em um único lugar.
+
+Azure Cloud Shell
+
+O Azure Cloud Shell é um terminal baseado em navegador que fornece um ambiente de linha de comando autenticado para gerenciar recursos do Azure. Ele suporta dois tipos de shell: Bash e PowerShell. O Cloud Shell inclui ferramentas como a CLI do Azure e o Azure PowerShell, permitindo que você execute comandos para criar, configurar e gerenciar recursos do Azure diretamente do navegador.
+
+CLI do Azure: Uma interface de linha de comando multiplataforma que permite gerenciar recursos do Azure usando comandos simples e diretos.
+Azure PowerShell: Um módulo do PowerShell que fornece cmdlets para gerenciar recursos do Azure, ideal para automação de tarefas administrativas.
+
+Azure Arc
+
+O Azure Arc estende os serviços e a gestão do Azure para qualquer infraestrutura, seja on-premises, na borda ou em outras nuvens. Ele permite que você gerencie servidores, clusters de Kubernetes e serviços de dados como se estivessem no Azure. O Azure Arc facilita a governança e a segurança centralizadas, além de permitir a implementação de práticas DevOps em ambientes híbridos e multinuvem.
+
+Azure Resource Manager (ARM) e Modelos do ARM
+
+O Azure Resource Manager (ARM) é o serviço de gerenciamento de implantação do Azure. Ele fornece uma camada de gerenciamento que permite criar, atualizar e excluir recursos em sua conta do Azure. Com o ARM, você pode gerenciar seus recursos como um grupo, chamado de grupo de recursos, e aplicar políticas, tags e controle de acesso a esses grupos.
+
+Os Modelos do ARM são arquivos JSON que definem a infraestrutura e a configuração do seu projeto. Eles permitem a implantação declarativa de recursos, garantindo que a infraestrutura seja configurada de maneira consistente e repetível. Os modelos ARM são idempotentes, o que significa que você pode implantá-los várias vezes com os mesmos resultados.
+
+
+Descrever as ferramentas de monitoramento no Azure
+
+
+Assistente do Azure
+O Assistente do Azure é uma ferramenta que fornece recomendações personalizadas para ajudar a otimizar seus recursos do Azure em termos de confiabilidade, segurança, excelência operacional, desempenho e custo. Ele analisa suas configurações e uso do Azure e sugere ações que você pode tomar para melhorar a eficiência e reduzir custosa.
+
+Integridade do Serviço do Azure
+A Integridade do Serviço do Azure (Azure Service Health) mantém você informado sobre incidentes de serviço e manutenção planejada que podem afetar seus recursos do Azure. Ele fornece alertas personalizados e diretrizes para ajudar a mitigar o impacto de problemas de serviço. Você pode configurar alertas para receber notificações por email, SMS, notificações push, webhook e outras ferramentas de gerenciamento de serviços de TI.
+
+Azure Monitor
+O Azure Monitor é uma solução abrangente para coletar, analisar e agir sobre dados de monitoramento de seus ambientes de nuvem e locais. Ele ajuda a maximizar a disponibilidade e o desempenho de seus aplicativos e serviços. O Azure Monitor inclui várias ferramentas:
+
+Log Analytics: Permite coletar e analisar dados de logs de todos os seus recursos do Azure. Você pode criar consultas personalizadas para obter insights detalhados sobre a integridade e o desempenho dos seus recursos.
+Alertas do Azure Monitor: Permitem configurar notificações para eventos específicos, como quando uma métrica atinge um limite definido. Isso ajuda a responder rapidamente a problemas antes que eles afetem seus usuários.
+Application Insights: Uma ferramenta de monitoramento de desempenho de aplicativos (APM) que fornece insights detalhados sobre a integridade e o desempenho de seus aplicativos web. Ele permite rastrear solicitações, exceções, dependências e muito mais, ajudando a identificar e resolver problemas rapidamente.
+
